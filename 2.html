@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我所热爱的</title>
+<style type="text/css">
+
+        .imgBox{
+            border-top: 2px solid cadetblue;
+            width: 400px;
+            height: 700px;
+			margin-left:200px;
+			top:auto; 
+			float:left;
+			
+
+		}
+
+        .imgBox img{
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+            padding-top: 30px;
+
+        }
+
+        .img1{
+            display: block;
+        }
+
+        .img2{
+            display: none;
+        }
+
+        .img3{
+            display: none;
+	
+        }
+		a:link{color:#FFF;}
+		a:visted{color:#000;}
+	    .imgBox2{
+            border-top: 2px solid cadetblue;
+            width: 400px;
+            height: 700px;
+			margin:auto;
+			margin-right:200px;
+            float:right;
+
+        }
+
+        .imgBox2 img{
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+            padding-top: 30px;
+
+        }
+
+        .img1{
+            display: block;
+        }
+
+        .img2{
+            display: none;
+        }
+
+        .img3{
+            display: none;
+        }	
+		
+    </style>
+  
+</head>
+
+<body background="21.jpeg" style="background-repeat:no-repeat; background-size:100%100%; background-attachment:fixed;">
+<div id="divc" style=" width:100%; height:1200px;">
+  </p><center><font face="华文新魏" size="+4" color="#387C43"><h1>我所热爱的</h1></font></p> </center>
+  <center><font face="华文新魏" size="+3" color="#000000">我的热爱很简单，是一个喜欢文艺且比较矫情的人，在很多时候我更喜欢把自己热爱寄托在自己的偶像上，</p>因为他们所表述的正是我想要表达的。而下面这三个，正是我这么多年追星生涯中，为数不多的热爱。</font></p> </center>
+ <div class="imgBox">
+    <img class="img-slide img1"   src="1690557796.jpeg" alt="1" width="400px" height="700px">
+    <img class="img-slide img2"    src="1941778606.jpeg" alt="2" width="400px" height="700px">
+    <img class="img-slide img3"   src="2012412406.jpeg" alt="3" width="400px" height="700px">
+</div>
+   
+   <div class="imgBox2">
+    <img class="img-slide2 img1"   src="2048929078.jpeg" alt="1" width="400px" height="700px">
+    <img class="img-slide2 img2"     src="2048929072.jpeg" alt="2" width="400px" height="700px">
+    <img class="img-slide2 img3"   src="2048929071.jpeg" alt="3" width="400px" height="700px">
+ </div>
+  </div>
+  
+  
+  
+  <div>
+  <div id="diva">
+  <center>
+  <font face="华文新魏" size="+3" color="#FFFFFF">
+  the number1：王源，这是我心中永远的白月光。是我从初一开始一直喜欢到了现在的男人。集美貌与才华于一身。<a href="https://baike.baidu.com/item/%E7%8E%8B%E6%BA%90/5475062?fr=aladdin" target="_blank" >了解王源</a>
+  </font>
+  </p> 
+  </center>
+  <center>
+  <font face="华文新魏" size="+3" color="#FFFFFF">
+  the number2：南北CP：这是我最近才粉上的墙头，郭文韬与蒲熠星，北京大学与南京大学的两位学霸。智性恋天花板。</p><a href="https://baike.baidu.com/item/%E7%8E%8B%E6%BA%90/5475062?fr=aladdin" target="_blank">了解蒲熠星</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://baike.baidu.com/item/%E9%83%AD%E6%96%87%E9%9F%AC/2837754?fromModule=lemma_search-box" target="_blank">了解郭文韬</a>
+  </font>
+  </p>
+  <a href="index.html" style="font-size:50px;">返回首页</a>
+   </center> 
+ 
+ </div> 
+ </div>
+ 
+
+
+</body>
+<script type="text/javascript">
+    var index=0;
+    //效果
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,3000);
+</script>
+<script type="text/javascript">
+    var index=0;
+    //效果
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide2");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,3000);
+</script>
+</body>
+</html>
