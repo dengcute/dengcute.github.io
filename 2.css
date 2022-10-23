@@ -1,0 +1,48 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul,li{
+		list-style-type: none;
+}
+#nav{
+	height: 50px;
+	background-color:#999;
+	color:#C0BAB1;	
+}
+#father{
+	margin: 0 auto;
+	width: 1296px;
+	text-align: center;
+}
+#father>li{
+    float: left; 
+
+	width: 290px;
+	line-height: 50px;
+	font-family:"华文楷体";
+	font-size:25px;
+
+}
+#father li a:link{
+	color: #fff;
+	text-decoration: none;
+}
+#father li:hover{
+	background-color:#BBF;
+	text-decoration: none;
+}
+#son{
+	display: none;
+}
+#father li:hover #son{
+	display: block;
+}
+#son li:hover{
+	background-color:#8080FF;
+}
+
+
+/* CSS Document */
+
