@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            position: relative;
+            width: 700px;
+            height: 600px;
+            background: rgb(0, 204, 153);
+            margin: 50px auto;
+        }
+
+        h1 {
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-bottom: 1px solid #fff;
+        }
+
+        form {
+            width: 700px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        img {
+            position: absolute;
+            left: 250px;
+            width: 200px;
+            margin-top: 10px;}
+	a:link{color:#FFF;}
+		a:visted{color:#000;}
+        }
+    </style>
+
+    <script>
+        function $(id) {
+            return document.getElementById(id);
+        }
+        // 鼠标移入
+        function mover() {
+            $("main").style.background = "rgb(100,150,100)";
+        }
+        // 鼠标移出
+        function mout() {
+            $("main").style.background = "rgb(100, 165, 100)";
+        }
+        // 单击鼠标
+        function mclick() {
+            $("mytext").value = "单击鼠标";
+            $("image").src="1912286329.jpeg";
+        }
+        // 双击鼠标
+        function mdbclick() {
+            $("mytext").value = "双击鼠标";
+            $("image").src = "10.jpg";
+            $("main").style.background = "rgb(120,20,20)"
+        }
+
+    </script>
+</head>
+
+<body background="12.jpeg" style="background-repeat:no-repeat; background-size:100%100%; background-attachment:fixed;">
+    <div id="main" onmouseover="mover();" onmouseout="mout();" onclick="mclick();" ondblclick="mdbclick()" ;>
+        <h1>谈谈你的看法吧</h1>
+        <form action="" name="myform">
+           <textarea name="" cols="60" rows="10">你觉得我是一个什么样的人</textarea></p>
+           <input name="" type="submit"  value="提交我的看法">
+        </form>
+        <img src="1665293156156.jpeg" alt="" width="205" height="161" id="image">
+    </div>
+     <center><a href="index.html" style="font-size:40px;">返回首页</a></center>
+</body>
+
+</html>
